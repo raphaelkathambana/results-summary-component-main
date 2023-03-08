@@ -1,0 +1,17 @@
+@use "sass:math";
+
+@function em($pixel) {
+    @if not math.is-unitless($pixel) {
+        @error '#{$pixel} must not have a Unit';
+    } @else {
+        @return math.div($pixel, 16) + em;
+    }
+}
+
+@function rem($pixel) {
+    @if not math.is-unitless($pixel) {
+        @error '#{$pixel} must not have a Unit';
+    } @else {
+        @return math.div($pixel, 16) + rem;
+    }
+}

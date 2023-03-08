@@ -1,0 +1,50 @@
+@use "colors" as c;
+@use "../util" as u;
+.item {
+    width: u.rem(275);
+    height: u.rem(16);
+    border: u.rem(1) solid black;
+    border-radius: u.rem(10);
+    padding: 20px;
+    margin: 7.5px 0;
+    &--grid {
+        display: grid;
+        grid-template-columns: 0.25fr 2fr 1fr;
+        column-gap: u.rem(15);
+        grid-auto-rows: u.rem(20);
+        align-content: center;
+    }
+    &--reaction {
+        color: c.$Light_red;
+        font-weight: 700;
+    }
+    &--memory {
+        color: c.$Orangey_yellow;
+        font-weight: 700;
+    }
+    &--verbal {
+        color: c.$Green_teal;
+        font-weight: 700;
+    }
+    &--visual {
+        color: c.$Cobalt_blue;
+        font-weight: 700;
+    } 
+    &--percentage {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+button {
+    width: u.rem(315);
+    height: u.rem(55);
+    background-color: c.$Dark_gray_blue;
+    border-radius: u.rem(30);
+    text-align: center;
+    border: 0;
+    font-family: inherit;
+    margin: 16.5px 0 30px;
+    & p {
+        font-family: inherit;
+    }
+}

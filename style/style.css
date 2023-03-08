@@ -1,0 +1,151 @@
+.light-font {
+  color: #ffffff;
+}
+
+@font-face {
+  font-family: HankenGrotesk;
+  src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+:root {
+  --font-size: 18px;
+}
+
+.item {
+  width: 17.1875rem;
+  height: 1rem;
+  border: 0.0625rem solid black;
+  border-radius: 0.625rem;
+  padding: 20px;
+  margin: 7.5px 0;
+}
+.item--grid {
+  display: grid;
+  grid-template-columns: 0.25fr 2fr 1fr;
+  -moz-column-gap: 0.9375rem;
+       column-gap: 0.9375rem;
+  grid-auto-rows: 1.25rem;
+  align-content: center;
+}
+.item--reaction {
+  color: #ff5757;
+  font-weight: 700;
+}
+.item--memory {
+  color: #ffb01f;
+  font-weight: 700;
+}
+.item--verbal {
+  color: #00bd91;
+  font-weight: 700;
+}
+.item--visual {
+  color: #1125d4;
+  font-weight: 700;
+}
+.item--percentage {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 19.6875rem;
+  height: 3.4375rem;
+  background-color: #303b5a;
+  border-radius: 1.875rem;
+  text-align: center;
+  border: 0;
+  font-family: inherit;
+  margin: 16.5px 0 30px;
+}
+button p {
+  font-family: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+
+body,
+p,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  font-family: HankenGrotesk;
+}
+
+#summary {
+  font-size: var(--font-size);
+  padding-left: 30px;
+  padding-bottom: 13px;
+  margin-top: -75px;
+}
+
+p {
+  margin: 0;
+  font-size: var(--font-size);
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header {
+  background-image: linear-gradient(#7857ff, #2e2be9);
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  height: 360px;
+  padding: 50px 30px 45px;
+  justify-content: flex-end;
+  position: relative;
+  top: -100px;
+  border-radius: 30px;
+}
+
+.circle {
+  border-radius: 50%;
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  width: 140px;
+  height: 140px;
+  text-align: center;
+  margin: 25px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.circle h1 {
+  font-size: 45px;
+}
+.circle h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.opaque-50 {
+  opacity: 50%;
+}
+
+.opaque-70 {
+  opacity: 70%;
+}
+
+.num-text-1 {
+  color: #303b5a;
+  font-weight: 700;
+}
+
+.num-text-2 {
+  color: #303b5a;
+  opacity: 70%;
+}/*# sourceMappingURL=style.css.map */

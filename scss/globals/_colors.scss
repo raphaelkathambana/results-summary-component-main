@@ -1,0 +1,27 @@
+// Primary
+
+$Light_red: #ff5757;
+$Orangey_yellow: #ffb01f;
+$Green_teal: #00bd91;
+$Cobalt_blue: #1125d4;
+
+// Gradients
+
+$Light_slate_blue: #7857ff; //(background)
+$Light_royal_blue: #2e2be9; //(background)
+
+$Violet_blue : hsla(256, 72%, 46%, 1); // (circle)
+$Persian_blue : hsla(241, 72%, 46%, 0); // (circle)
+
+
+
+// Neutral
+
+$White: #ffffff;
+$Pale_blue: #ebf1ff;
+$Light_lavender: #c8c7ff;
+$Dark_gray_blue: #303b5a;
+
+.light-font {
+    color: $White;
+}
