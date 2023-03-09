@@ -2,6 +2,22 @@
   color: #ffffff;
 }
 
+.red {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.yellow {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.green {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.blue {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
 @font-face {
   font-family: HankenGrotesk;
   src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
@@ -10,13 +26,47 @@
   --font-size: 18px;
 }
 
+.opaque-50 {
+  opacity: 50%;
+}
+
+.opaque-70 {
+  opacity: 70%;
+}
+
+.num-text-1 {
+  color: #303b5a;
+  font-weight: 700;
+}
+
+.num-text-2 {
+  color: #303b5a;
+  opacity: 70%;
+}
+
+.result {
+  font-size: 20px;
+}
+
 .item {
   width: 17.1875rem;
-  height: 1rem;
-  border: 0.0625rem solid black;
+  height: 1.125rem;
   border-radius: 0.625rem;
   padding: 20px;
   margin: 7.5px 0;
+}
+.item--summary {
+  margin-top: -75px;
+  min-width: 275px;
+  padding-right: 30px;
+}
+.item--summary h2 {
+  font-size: var(--font-size);
+}
+@media (min-width: 43.75rem) {
+  .item--summary {
+    margin-top: 0;
+  }
 }
 .item--grid {
   display: grid;
@@ -79,13 +129,6 @@ h2 {
   font-family: HankenGrotesk;
 }
 
-#summary {
-  font-size: var(--font-size);
-  padding-left: 30px;
-  padding-bottom: 13px;
-  margin-top: -75px;
-}
-
 p {
   margin: 0;
   font-size: var(--font-size);
@@ -97,6 +140,12 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+@media (min-width: 43.75rem) {
+  .container {
+    margin-top: 35px;
+    height: 455px;
+  }
 }
 
 .header {
@@ -111,6 +160,19 @@ p {
   position: relative;
   top: -100px;
   border-radius: 30px;
+}
+.header h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+@media (min-width: 43.75rem) {
+  .header {
+    top: 0;
+    max-width: 370px;
+    padding: 45px 60px 60px;
+    gap: 20px;
+    height: 410px;
+  }
 }
 
 .circle {
@@ -127,25 +189,34 @@ p {
 .circle h1 {
   font-size: 45px;
 }
-.circle h2 {
-  font-size: 20px;
-  margin-bottom: 5px;
+@media (min-width: 43.75rem) {
+  .circle h1 {
+    font-size: 55px;
+  }
+}
+@media (min-width: 43.75rem) {
+  .circle {
+    width: 200px;
+    height: 200px;
+  }
 }
 
-.opaque-50 {
-  opacity: 50%;
+@media (min-width: 43.75rem) {
+  body {
+    display: grid;
+    grid-template-columns: 370px 394px;
+    height: 750px;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+  }
 }
 
-.opaque-70 {
-  opacity: 70%;
-}
-
-.num-text-1 {
-  color: #303b5a;
-  font-weight: 700;
-}
-
-.num-text-2 {
-  color: #303b5a;
-  opacity: 70%;
+@media (min-width: 43.75rem) {
+  .aside {
+    height: 515px;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 10px #ebf1ff;
+    border-radius: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */

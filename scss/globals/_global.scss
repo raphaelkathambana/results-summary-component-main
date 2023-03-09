@@ -19,12 +19,6 @@ h2 {
     font-family: u.$font;
 }
 
-#summary {
-    font-size: var(--font-size);
-    padding-left: 30px;
-    padding-bottom: 13px;
-    margin-top: -75px;
-}
 p {
     margin: 0;
     font-size: var(--font-size);
@@ -36,6 +30,10 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    @include u.breakpoint(small) {
+        margin-top: 35px;
+        height: 455px;
+    }
 }
 
 .header {
@@ -50,6 +48,17 @@ p {
     position: relative;
     top: -100px;
     border-radius: 30px;
+    & h2 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    @include u.breakpoint(small) {
+        top: 0;
+        max-width: 370px;
+        padding: 45px 60px 60px;
+        gap: 20px;
+        height: 410px;
+    }
 }
 .circle {
     border-radius: 50%;
@@ -59,31 +68,36 @@ p {
     text-align: center;
     & h1 {
         font-size: 45px;
+        @include u.breakpoint(small) {
+            font-size: 55px;
+        }
     }
-    & h2 {
-        font-size: 20px;
-        margin-bottom: 5px;
-    }
+
     margin: 25px 0px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include u.breakpoint (small) {
+        width: 200px;
+        height: 200px;
+    }
 }
 
-.opaque-50 {
-    opacity: 50%;
+body {
+    @include u.breakpoint(small) {
+        display: grid;
+        grid-template-columns: 370px 394px;
+        height: 750px;
+        align-items: center;
+        justify-content: center;
+        overflow-y: hidden;
+    }
 }
-
-.opaque-70 {
-    opacity: 70%;
-}
-
-.num-text-1 {
-    color: c.$Dark_gray_blue;
-    font-weight: 700;
-}
-.num-text-2 {
-    color: c.$Dark_gray_blue;
-
-    opacity: 70%;
+.aside {
+    @include u.breakpoint(small) {
+        height: 515px;
+        background-color: c.$White;
+        box-shadow: 10px 10px 10px c.$Pale_blue;
+        border-radius: 30px;
+    }
 }

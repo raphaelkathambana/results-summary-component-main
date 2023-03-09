@@ -1,3 +1,5 @@
+@use "../globals/colors" as c;
+
 @font-face {
     font-family: HankenGrotesk;
     src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
@@ -5,4 +7,24 @@
 $font: HankenGrotesk;
 :root {
     --font-size: 18px;
+}
+.opaque-50 {
+    opacity: 50%;
+}
+
+.opaque-70 {
+    opacity: 70%;
+}
+
+.num-text-1 {
+    color: c.$Dark_gray_blue;
+    font-weight: 700;
+}
+.num-text-2 {
+    color: c.$Dark_gray_blue;
+    opacity: 70%;
+}
+
+.result {
+    font-size: 20px;
 }
