@@ -1,3 +1,11 @@
+:root {
+  --gradient: linear-gradient(
+      #303b5a 90%
+      #7857ff,
+      #2e2be9 80%
+  );
+}
+
 .light-font {
   color: #ffffff;
 }
@@ -61,7 +69,7 @@
   padding-right: 30px;
 }
 .item--summary h2 {
-  font-size: var(--font-size);
+  font-size: 25px;
 }
 @media (min-width: 43.75rem) {
   .item--summary {
@@ -98,17 +106,30 @@
 }
 
 button {
+  --gradient: linear-gradient(to right, #303b5a, #2e2be9);
   width: 19.6875rem;
   height: 3.4375rem;
-  background-color: #303b5a;
+  background-image: var(--gradient);
   border-radius: 1.875rem;
   text-align: center;
   border: 0;
   font-family: inherit;
   margin: 16.5px 0 30px;
+  background-size: 999%;
+  background-position: left;
+  transition: background-position 1s ease-in-out;
 }
 button p {
   font-family: inherit;
+}
+@media (min-width: 43.75rem) {
+  button {
+    margin: 22.5px 0 20px;
+  }
+}
+
+button:hover {
+  background-position: right;
 }
 
 html {
@@ -145,6 +166,7 @@ p {
   .container {
     margin-top: 35px;
     height: 455px;
+    margin-left: 60px;
   }
 }
 
@@ -172,6 +194,7 @@ p {
     padding: 45px 60px 60px;
     gap: 20px;
     height: 410px;
+    right: -60px;
   }
 }
 
@@ -215,6 +238,7 @@ p {
 @media (min-width: 43.75rem) {
   .aside {
     height: 515px;
+    width: 455px;
     background-color: #ffffff;
     box-shadow: 10px 10px 10px #ebf1ff;
     border-radius: 30px;

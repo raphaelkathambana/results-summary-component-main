@@ -14,6 +14,13 @@ $Violet_blue : hsla(256, 72%, 46%, 1); // (circle)
 $Persian_blue : hsla(241, 72%, 46%, 0); // (circle)
 
 
+:root {
+    --gradient: linear-gradient(
+        #303b5a 90%
+        #7857ff, 
+        #2e2be9 80%
+    );
+}
 
 // Neutral
 

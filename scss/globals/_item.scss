@@ -9,7 +9,7 @@
 
     &--summary {
         & h2 {
-            font-size: var(--font-size);
+            font-size: 25px;
         }
         margin-top: -75px;
         min-width: 275px;
@@ -48,9 +48,10 @@
     }
 }
 button {
+    --gradient: linear-gradient(to right, #303b5a, #2e2be9);
     width: u.rem(315);
     height: u.rem(55);
-    background-color: c.$Dark_gray_blue;
+    background-image: var(--gradient);
     border-radius: u.rem(30);
     text-align: center;
     border: 0;
@@ -59,4 +60,14 @@ button {
     & p {
         font-family: inherit;
     }
+    @include u.breakpoint(small) {
+        margin: 22.5px 0 20px;
+    }
+    background-size: 999%;
+    background-position: left;
+    transition: background-position 1s ease-in-out;
+}
+
+button:hover {
+    background-position: right;
 }

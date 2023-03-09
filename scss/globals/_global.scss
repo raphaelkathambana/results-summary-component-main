@@ -33,6 +33,7 @@ p {
     @include u.breakpoint(small) {
         margin-top: 35px;
         height: 455px;
+        margin-left: 60px;
     }
 }
 
@@ -58,6 +59,7 @@ p {
         padding: 45px 60px 60px;
         gap: 20px;
         height: 410px;
+        right: -60px;
     }
 }
 .circle {
@@ -77,7 +79,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @include u.breakpoint (small) {
+    @include u.breakpoint(small) {
         width: 200px;
         height: 200px;
     }
@@ -96,6 +98,7 @@ body {
 .aside {
     @include u.breakpoint(small) {
         height: 515px;
+        width: 455px;
         background-color: c.$White;
         box-shadow: 10px 10px 10px c.$Pale_blue;
         border-radius: 30px;
