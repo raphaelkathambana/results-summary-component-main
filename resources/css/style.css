@@ -42,7 +42,7 @@
   opacity: 70%;
 }
 
-.num-text-1 {
+#num-text-1 {
   color: #303b5a;
   font-weight: 700;
 }
@@ -242,10 +242,4 @@ p {
     box-shadow: 10px 10px 10px #ebf1ff;
     border-radius: 30px;
   }
-}
-
-#paragraph {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */

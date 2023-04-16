@@ -103,3 +103,8 @@ body {
         border-radius: 30px;
     }
 }
+#paragraph {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
